@@ -27,7 +27,23 @@ load ' ' (I. LF = y)} y
 )
 
 NB. Let's name some foreign conjunctions
+NB. 0. Scripts
+run =:0!:001 NB. executes file or noun, stops on error, displays
 
-NB. HOST
+NB. 1. Files
+ls =: 1!:0 NB. how can I give a funciton default arguments? for ls, '*'
+cat =: 1!:1
+write =: 1!:2
+append =: 1!:3
+cwd =: 1!:43
+
+NB. set current working directory, i.e. cd.
+NB. cd maps to 15!:0 - call dll function
+scwd =: 1!:44 
+
+
+NB. 2. HOST
 NB. getenv is already defined
 spawn =: 2!:1
+
+
