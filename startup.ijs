@@ -36,6 +36,7 @@ cat =: 1!:1
 write =: 1!:2
 append =: 1!:3
 cwd =: 1!:43
+display=:(i.0 0)[1!:2&2
 
 NB. set current working directory, i.e. cd.
 NB. cd maps to 15!:0 - call dll function
@@ -45,5 +46,3 @@ scwd =: 1!:44
 NB. 2. HOST
 NB. getenv is already defined
 spawn =: 2!:1
-
-
