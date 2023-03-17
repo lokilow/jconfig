@@ -46,3 +46,10 @@ scwd =: 1!:44
 NB. 2. HOST
 NB. getenv is already defined
 spawn =: 2!:1
+
+NB. Reload file
+rl=: 3 : 0
+if.1<#ARGV_z_ do.
+  load >1}ARGV_z_
+end.
+)
