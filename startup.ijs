@@ -53,3 +53,5 @@ if.1<#ARGV_z_ do.
   load >1}ARGV_z_
 end.
 )
+
+load 'jd' 
