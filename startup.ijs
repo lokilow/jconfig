@@ -36,6 +36,7 @@ cat =: 1!:1
 write =: 1!:2
 append =: 1!:3
 cwd =: 1!:43
+rm =: 1!:55
 display=:(i.0 0)[1!:2&2
 
 NB. set current working directory, i.e. cd.
